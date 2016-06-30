@@ -1,4 +1,5 @@
 Copyright (C) 2015 Max Hofbauer
+Micropython changes Copyright (C) 2016 by Data-Ken Research
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
