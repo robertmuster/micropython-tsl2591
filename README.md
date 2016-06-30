@@ -16,11 +16,9 @@ In the last step ('Testing I2C') you should see at least one connected device, y
 
 ## Installing ##
 
-To install the python module download this repository and run:
-
-```
-python setup.py install
-```
+Just copy tsl2591.py to your micropython board. Micropython's webrepl has experimental
+support for copying files. I instead used the [mpfshell](https://github.com/wendlers/mpfshell)
+to copy files to my ESP8266 board.
 
 
 
