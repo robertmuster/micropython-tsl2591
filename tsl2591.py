@@ -72,9 +72,11 @@ SENSOR_ADDRESS=0x29
 class Tsl2591:
     def __init__(
                  self,
+                 sensor_id,
                  integration=INTEGRATIONTIME_100MS,
                  gain=GAIN_LOW
                  ):
+        self.sensor_id = sensor_id
         self.bus = SMBusEmulator()
         self.integration_time = integration
         self.gain = gain
