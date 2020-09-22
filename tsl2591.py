@@ -50,9 +50,10 @@ def _bytes_to_int(data):
     return data[0] + (data[1]<<8)
 
 from machine import I2C, Pin
+# Change the scl & sda Pins in the SMBusEmulator according to the pin configuration for your board
 class SMBusEmulator:
     __slots__ = ('i2c',)
-    def __init__(self, scl_pinno=5, sda_pinno=4):
+    def __init__(self, scl_pinno=5, sda_pinno=4): 
         self.i2c = I2C(scl=Pin(scl_pinno, Pin.IN),
                        sda=Pin(sda_pinno, Pin.IN))
 
